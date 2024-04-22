@@ -1,0 +1,135 @@
+.frameChild {
+  height: 56px;
+  width: 54px;
+  position: relative;
+  border-radius: var(--br-21xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.alicentHightower {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.consultedForSkin {
+  position: relative;
+  font-size: var(--body-1-regular-size);
+  font-weight: 500;
+  color: var(--color-gray-200);
+}
+.alicentHightowerParent,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.alicentHightowerParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-10xs);
+  min-width: 125px;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.icon,
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+  height: 20.3px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.filter,
+.iconParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.filter {
+  width: 255px;
+  flex-direction: column;
+  gap: var(--gap-mini);
+}
+.january2023 {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 18px;
+  display: inline-block;
+  min-width: 119px;
+}
+.elseStatement,
+.mergeOperator {
+  display: flex;
+  align-items: flex-start;
+}
+.elseStatement {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base-5) 0 0;
+  font-size: var(--body-1-regular-size);
+  color: var(--color-darkgray);
+}
+.mergeOperator {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.mightBeBit {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-1-regular-size);
+  letter-spacing: -0.01em;
+  line-height: 24px;
+  color: var(--neutrals-900);
+}
+.branchSplitter,
+.mergeOperatorParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.mergeOperatorParent {
+  flex: 1;
+  border-radius: var(--br-mid);
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-2xl) var(--padding-16xl) var(--padding-3xl);
+  gap: var(--gap-8xs-7);
+  z-index: 1;
+}
+.branchSplitter {
+  width: 601px;
+  flex-direction: row;
+  padding: 0 var(--padding-9xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray-500);
+  font-family: var(--body-1-regular);
+}
+@media screen and (max-width: 750px) {
+  .mergeOperator {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .alicentHightower {
+    font-size: var(--body-1-regular-size);
+  }
+  .frameParent {
+    flex-wrap: wrap;
+  }
+}
