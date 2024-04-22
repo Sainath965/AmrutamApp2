@@ -1,0 +1,174 @@
+.frameChild {
+  height: 94px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-oldlace);
+  display: none;
+  max-width: 100%;
+}
+.image45Icon {
+  height: 49px;
+  width: 259px;
+  position: relative;
+  object-fit: cover;
+}
+.aboutUs,
+.findDoctors,
+.home {
+  position: relative;
+  line-height: 140%;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.home {
+  font-weight: 500;
+  min-width: 54px;
+}
+.aboutUs,
+.findDoctors {
+  white-space: nowrap;
+}
+.findDoctors {
+  color: var(--color-darkolivegreen-100);
+  min-width: 116px;
+}
+.aboutUs {
+  font-weight: 500;
+  min-width: 83px;
+}
+.homeParent,
+.image45Parent {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.homeParent {
+  margin: 0;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-roboto);
+}
+.image45Parent {
+  width: 669px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-61xl);
+}
+.login {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--color-darkolivegreen-100);
+  text-align: left;
+  display: inline-block;
+  min-width: 60px;
+  white-space: nowrap;
+}
+.loginWrapper {
+  cursor: pointer;
+  border: 1px solid var(--color-darkolivegreen-100);
+  padding: var(--padding-2xs-5) var(--padding-10xl) var(--padding-base-5);
+  background-color: var(--color-oldlace);
+  height: 58px;
+  border-radius: var(--br-2xs);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.loginWrapper:hover {
+  background-color: var(--color-antiquewhite);
+  border: 1px solid var(--color-seagreen);
+  box-sizing: border-box;
+}
+.signUp {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 85px;
+  white-space: nowrap;
+}
+.frameGroup,
+.signUpWrapper {
+  display: flex;
+  flex-direction: row;
+}
+.signUpWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs-5) var(--padding-20xl) var(--padding-mini-5);
+  background-color: var(--color-darkolivegreen-100);
+  border-radius: var(--br-2xs);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.signUpWrapper:hover {
+  background-color: var(--color-seagreen);
+}
+.frameGroup {
+  height: 56px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.frameParent,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.frameParent {
+  width: 1232px;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.rectangleParent {
+  align-self: stretch;
+  background-color: var(--color-oldlace);
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-4xl) var(--padding-xl) var(--padding-mini);
+  box-sizing: border-box;
+  top: 0;
+  z-index: 99;
+  position: sticky;
+}
+@media screen and (max-width: 1050px) {
+  .homeParent {
+    display: none;
+  }
+  .image45Parent {
+    width: 339px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .image45Parent {
+    gap: var(--gap-21xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .image45Parent {
+    gap: var(--gap-xl);
+  }
+  .frameGroup {
+    display: none;
+  }
+  .frameParent {
+    width: 935px;
+  }
+}
